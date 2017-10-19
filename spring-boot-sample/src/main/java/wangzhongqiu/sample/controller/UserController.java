@@ -8,6 +8,7 @@ import wangzhongqiu.sample.constant.ConfigBean;
 import javax.annotation.Resource;
 
 @RestController
+@RequestMapping("/user")
 public class UserController {
     @Resource
     private ConfigBean configBean;
@@ -15,7 +16,7 @@ public class UserController {
     @Value("${config.welcome}")
     private String welcome;
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String hello() {
         return configBean.getWelcome() + " <br />" + welcome + " <br />" + "随机获得" + configBean.getRandomValue() + "元奖励";
     }
