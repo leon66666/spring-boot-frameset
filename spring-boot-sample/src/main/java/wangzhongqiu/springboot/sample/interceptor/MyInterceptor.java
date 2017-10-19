@@ -1,9 +1,9 @@
-package wangzhongqiu.sample.interceptor;
+package wangzhongqiu.springboot.sample.interceptor;
 
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-import wangzhongqiu.sample.domain.User;
+import wangzhongqiu.springboot.sample.domain.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

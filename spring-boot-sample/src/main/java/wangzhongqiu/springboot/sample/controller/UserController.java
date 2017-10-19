@@ -1,9 +1,9 @@
-package wangzhongqiu.sample.controller;
+package wangzhongqiu.springboot.sample.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import wangzhongqiu.sample.config.ConfigBean;
+import wangzhongqiu.springboot.sample.config.ConfigBean;
 
 import javax.annotation.Resource;
 /**

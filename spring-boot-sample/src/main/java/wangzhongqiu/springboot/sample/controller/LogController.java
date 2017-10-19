@@ -1,4 +1,4 @@
-package wangzhongqiu.sample.controller;
+package wangzhongqiu.springboot.sample.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

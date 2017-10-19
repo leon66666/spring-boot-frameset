@@ -1,4 +1,4 @@
-package wangzhongqiu.sample.domain;
+package wangzhongqiu.springboot.sample.domain;
 
 /**
  * @author wangzhongqiu

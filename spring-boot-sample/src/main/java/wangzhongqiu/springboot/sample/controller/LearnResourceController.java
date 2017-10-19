@@ -1,9 +1,9 @@
-package wangzhongqiu.sample.controller;
+package wangzhongqiu.springboot.sample.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
-import wangzhongqiu.sample.domain.LearnResouce;
+import wangzhongqiu.springboot.sample.domain.LearnResouce;
 
 import java.util.ArrayList;
 import java.util.List;

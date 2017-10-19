@@ -1,9 +1,9 @@
-package wangzhongqiu.sample.controller;
+package wangzhongqiu.springboot.sample.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import wangzhongqiu.sample.domain.User;
+import wangzhongqiu.springboot.sample.domain.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
