@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration  scan="true" scanPeriod="60 seconds" debug="false">
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
     <contextName>logback</contextName>
-    <property name="log.path" value="D:\\test\\logback.log" />
+    <property name="log.path" value="D:\\test\\logback.log"/>
     <!--输出到控制台-->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
-       <!-- <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-            <level>ERROR</level>
-        </filter>-->
+        <!-- <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+             <level>ERROR</level>
+         </filter>-->
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
@@ -23,25 +23,26 @@
         </encoder>
     </appender>
 
+    <!--root节点是必选节点，用来指定最基础的日志输出级别，只有一个level属性。-->
     <root level="info">
-        <appender-ref ref="console" />
-        <appender-ref ref="file" />
+        <appender-ref ref="console"/>
+        <appender-ref ref="file"/>
     </root>
 
     <!-- logback为java中的包 -->
     <!--<logger name="com.dudu.controller"/>-->
     <!--logback.LogbackDemo：类的全路径 -->
     <!--<logger name="com.dudu.controller.LearnController" level="WARN" additivity="true">-->
-        <!--<appender-ref ref="console"/>-->
+    <!--<appender-ref ref="console"/>-->
     <!--</logger>-->
 
-    <!-- 测试环境+开发环境. 多个使用逗号隔开. -->
+    <!-- 测试环境+开发环境. 多个使用逗号隔开-->
     <springProfile name="test,dev">
-        <logger name="com.dudu.controller" level="info" />
+        <logger name="wangzhongqiu.sample" level="info"/>
     </springProfile>
-    <!-- 生产环境. -->
-    <springProfile name="prod">
-        <logger name="com.dudu.controller" level="ERROR" />
+    <!-- 生产环境 -->
+    <springProfile name="release">
+        <logger name="wangzhongqiu.sample" level="ERROR"/>
     </springProfile>
 
 </configuration>
