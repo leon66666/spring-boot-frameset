@@ -1,10 +1,11 @@
-package wangzhongqiu.sample.constant;
+package wangzhongqiu.sample.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Repository;
-
+/**
+ * @author wangzhongqiu
+ * @date 2017/10/19
+ */
 @Repository
 @ConfigurationProperties(prefix = "config")
 public class ConfigBean {

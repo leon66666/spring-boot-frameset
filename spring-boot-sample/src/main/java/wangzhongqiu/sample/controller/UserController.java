@@ -3,10 +3,13 @@ package wangzhongqiu.sample.controller;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import wangzhongqiu.sample.constant.ConfigBean;
+import wangzhongqiu.sample.config.ConfigBean;
 
 import javax.annotation.Resource;
-
+/**
+ * @author wangzhongqiu
+ * @date 2017/10/19
+ */
 @RestController
 @RequestMapping("/user")
 public class UserController {
