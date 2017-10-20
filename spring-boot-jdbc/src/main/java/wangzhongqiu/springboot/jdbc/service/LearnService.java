@@ -1,7 +1,8 @@
 package wangzhongqiu.springboot.jdbc.service;
 
-import com.dudu.domain.LearnResouce;
-import com.dudu.tools.Page;
+
+import wangzhongqiu.springboot.jdbc.domain.LearnResouce;
+import wangzhongqiu.springboot.jdbc.tools.Page;
 
 import java.util.Map;
 

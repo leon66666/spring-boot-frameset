@@ -2,11 +2,6 @@ package wangzhongqiu.springboot.jdbc.controller;
 
 
 import com.alibaba.fastjson.JSONObject;
-import com.dudu.domain.LearnResouce;
-import com.dudu.service.LearnService;
-import com.dudu.tools.Page;
-import com.dudu.tools.ServletUtil;
-import com.dudu.tools.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +9,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import wangzhongqiu.springboot.jdbc.domain.LearnResouce;
+import wangzhongqiu.springboot.jdbc.service.LearnService;
+import wangzhongqiu.springboot.jdbc.tools.Page;
+import wangzhongqiu.springboot.jdbc.tools.ServletUtil;
+import wangzhongqiu.springboot.jdbc.tools.StringUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
