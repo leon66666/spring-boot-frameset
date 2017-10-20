@@ -3,7 +3,6 @@ package wangzhongqiu.springboot.jdbc.tools;
 import org.apache.commons.lang3.time.DateFormatUtils;
 
 import java.util.Date;
-import java.util.Random;
 
 /**
  * 项目名称：账号安全中心(all)   

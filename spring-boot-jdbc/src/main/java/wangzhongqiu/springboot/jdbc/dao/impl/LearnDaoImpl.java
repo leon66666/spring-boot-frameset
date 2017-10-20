@@ -1,13 +1,13 @@
 package wangzhongqiu.springboot.jdbc.dao.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
 import wangzhongqiu.springboot.jdbc.dao.LearnDao;
 import wangzhongqiu.springboot.jdbc.domain.LearnResouce;
 import wangzhongqiu.springboot.jdbc.tools.Page;
 import wangzhongqiu.springboot.jdbc.tools.StringUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
@@ -16,7 +16,7 @@ import java.util.Map;
  * Created by tengj on 2017/4/8.
  */
 @Repository
-public class LearnDaoImpl  implements LearnDao {
+public class LearnDaoImpl  implements LearnDao{
     @Autowired
     private JdbcTemplate jdbcTemplate;
 

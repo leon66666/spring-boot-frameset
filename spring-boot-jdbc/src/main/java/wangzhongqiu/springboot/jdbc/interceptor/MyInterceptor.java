@@ -1,9 +1,9 @@
 package wangzhongqiu.springboot.jdbc.interceptor;
 
+import wangzhongqiu.springboot.jdbc.domain.User;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-import wangzhongqiu.springboot.jdbc.domain.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,7 +25,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
         User user=(User)request.getSession().getAttribute("user");
         if(null==user){
-            response.sendRedirect(request.getContextPath() + "/toLogin");
+            response.sendRedirect("toLogin");
             flag = false;
         }else{
             flag = true;

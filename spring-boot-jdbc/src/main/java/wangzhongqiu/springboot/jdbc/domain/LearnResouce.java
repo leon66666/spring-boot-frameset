@@ -1,7 +1,7 @@
 package wangzhongqiu.springboot.jdbc.domain;
 
 /**
- * @author wangzhongqiu
+ * Created by tengj on 2017/3/7.
  */
 public class LearnResouce {
     private Long id;

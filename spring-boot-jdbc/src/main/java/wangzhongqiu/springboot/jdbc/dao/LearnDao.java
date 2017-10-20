@@ -1,13 +1,12 @@
 package wangzhongqiu.springboot.jdbc.dao;
 
-
 import wangzhongqiu.springboot.jdbc.domain.LearnResouce;
 import wangzhongqiu.springboot.jdbc.tools.Page;
 
 import java.util.Map;
 
 /**
- * Created by wangzhongqiu on 2017/4/8.
+ * Created by tengj on 2017/4/8.
  */
 public interface LearnDao {
     int add(LearnResouce learnResouce);
