@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Repository;
 /**
  * @author wangzhongqiu
- * @date 2017/10/19
+ * @date 2017/10/20
  */
 @Repository
 @ConfigurationProperties(prefix = "config")
