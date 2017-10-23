@@ -8,3 +8,9 @@ spring-boot和各大主流技术的框架整合
  - 拦截器处理
  - Thymeleaf 
  - 日志logback，不同环境不同日志级别
+
+###   spring-boot-jdbc（参考：https://github.com/tengj/SpringBootDemo）
+ - springboot和jdbc整合
+
+###   spring-boot-mybatis（参考：https://github.com/tengj/SpringBootDemo）
+ - springboot和mybatis整合
