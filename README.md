@@ -4,9 +4,9 @@ spring-boot和各大主流技术的框架整合
  - 入门demo
  - 配置文件说明
  - 开发，测试，线上，三个环境不同的配置文件
- - 访问静态资源  
+ - 访问静态资源
  - 拦截器处理
- - Thymeleaf 
+ - Thymeleaf
  - 日志logback，不同环境不同日志级别
 
 ###   spring-boot-jdbc（参考：https://github.com/tengj/SpringBootDemo）
