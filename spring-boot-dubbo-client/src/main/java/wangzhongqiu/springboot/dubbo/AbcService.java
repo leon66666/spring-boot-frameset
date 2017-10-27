@@ -2,6 +2,7 @@ package wangzhongqiu.springboot.dubbo;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Component;
+import wangzhongqiu.springboot.service.api.EchoService;
 
 /**
  * @author xiaofei.wxf(teaey)
