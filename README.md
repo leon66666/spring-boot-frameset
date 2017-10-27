@@ -1,6 +1,10 @@
 # spring-boot-frameset
 spring-boot和各大主流技术的框架整合
-###   spring-boot-sample（参考：https://github.com/tengj/SpringBootDemo）
+###   spring-boot-web（spring-boot-web项目模板）
+
+###   spring-boot-service（maven项目，为spring-boot-frameset各个模块提供service服务）
+
+###   spring-boot-sample（spring-boot-web项目）（参考：https://github.com/tengj/SpringBootDemo）
  - 入门demo
  - 配置文件说明
  - 开发，测试，线上，三个环境不同的配置文件
@@ -9,8 +13,8 @@ spring-boot和各大主流技术的框架整合
  - Thymeleaf
  - 日志logback，不同环境不同日志级别
 
-###   spring-boot-jdbc（参考：https://github.com/tengj/SpringBootDemo）
+###   spring-boot-jdbc（spring-boot-web项目）（参考：https://github.com/tengj/SpringBootDemo）
  - springboot和jdbc整合
 
-###   spring-boot-mybatis（参考：https://github.com/tengj/SpringBootDemo）
+###   spring-boot-mybatis（spring-boot-web项目）（参考：https://github.com/tengj/SpringBootDemo）
  - springboot和mybatis整合
