@@ -9,12 +9,12 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>spring-boot-dubbo-server</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>spring-boot-dubbo-client</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>spring-boot-dubbo-server</name>
-    <description>spring-boot-dubbo-server</description>
+    <name>spring-boot-dubbo-client</name>
+    <description>spring-boot-dubbo-client</description>
 
     <dependencies>
         <dependency>
