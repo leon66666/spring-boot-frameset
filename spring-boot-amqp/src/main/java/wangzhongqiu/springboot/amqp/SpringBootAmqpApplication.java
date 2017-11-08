@@ -8,21 +8,19 @@ import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
 import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.env.Environment;
 
 @SpringBootApplication
 public class SpringBootAmqpApplication {
     final static String queueName = "spring-boot";
+    final static String topicExchange = "spring-boot-exchange";
 
-    final static String HOST = "120.27.114.229";
-
-    final static String USERNAME = "root";
-
-    final static String PASSWORD = "root";
-
-    final static int PORT = 5672;
+    @Autowired
+    private Environment env;
 
     @Bean
     Queue queue() {
@@ -31,7 +29,7 @@ public class SpringBootAmqpApplication {
 
     @Bean
     TopicExchange exchange() {
-        return new TopicExchange("spring-boot-exchange");
+        return new TopicExchange(topicExchange);
     }
 
     @Bean
@@ -42,11 +40,11 @@ public class SpringBootAmqpApplication {
     @Bean
     public ConnectionFactory connectionFactory() {
         CachingConnectionFactory connectionFactory = new CachingConnectionFactory();
-        connectionFactory.setHost(HOST);
-        connectionFactory.setPort(PORT);
-        connectionFactory.setUsername(USERNAME);
-        connectionFactory.setPassword(PASSWORD);
-        connectionFactory.setVirtualHost("/");
+        connectionFactory.setHost(env.getProperty("amqp.host"));
+        connectionFactory.setPort(Integer.parseInt(env.getProperty("amqp.port")));
+        connectionFactory.setUsername(env.getProperty("amqp.username"));
+        connectionFactory.setPassword(env.getProperty("amqp.password"));
+        connectionFactory.setVirtualHost(env.getProperty("amqp.vhost"));
         //回调
         connectionFactory.setPublisherConfirms(true);
         return connectionFactory;
