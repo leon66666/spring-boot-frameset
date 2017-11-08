@@ -12,9 +12,19 @@ spring-boot和各大主流技术的框架整合
  - 拦截器处理
  - Thymeleaf
  - 日志logback，不同环境不同日志级别
+ - 通过Environment，获取到配置文件中的配置
 
 ###   spring-boot-jdbc（spring-boot-web项目）（参考：https://github.com/tengj/SpringBootDemo）
  - springboot和jdbc整合
 
 ###   spring-boot-mybatis（spring-boot-web项目）（参考：https://github.com/tengj/SpringBootDemo）
  - springboot和mybatis整合
+
+###   spring-boot-dubbo-server（spring-boot-web项目）
+ - springboot和dubbo整合，dubbo的provider
+
+###   spring-boot-dubbo-client（spring-boot-web项目）
+ - springboot和dubbo整合，dubbo的consumer
+
+###   spring-boot-amqp（spring-boot-web项目）
+ - springboot和amqp整合
